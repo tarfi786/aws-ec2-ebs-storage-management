@@ -22,7 +22,7 @@
 ## 4. Connect to EC2
 - Connected to the instance using SSH
 
-ssh -i key.pem ubuntu@<EC2-PUBLIC-IP>
+ssh -i devops-key.pem ubuntu@65.2.180.45
 
 ---
 
