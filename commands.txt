@@ -1,7 +1,7 @@
 # AWS EC2 & EBS Volume Management - Commands Reference
 
 # Connect to EC2 Instance
-ssh -i key.pem ubuntu@<EC2-PUBLIC-IP>
+ssh -i devops-key.pem ubuntu@65.2.180.45
 
 # Display block devices
 lsblk
