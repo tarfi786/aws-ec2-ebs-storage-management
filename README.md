@@ -56,10 +56,8 @@ Mounted filesystem output
 Snapshot created
 
 
-📈 Outcome
+
+   📈 Outcome
 Successfully implemented persistent storage on AWS using EC2 and EBS, along with Linux-based system administration and cloud storage management.
 
 
-👨‍💻 Author
-Tarfi Ansari
-Cloud & DevOps Enthusiast
