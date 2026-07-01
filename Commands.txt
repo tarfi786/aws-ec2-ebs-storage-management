@@ -1,0 +1,37 @@
+# AWS EC2 & EBS Volume Management - Commands Reference
+
+# Connect to EC2 Instance
+ssh -i key.pem ubuntu@<EC2-PUBLIC-IP>
+
+# Display block devices
+lsblk
+
+# Check disk usage and mounted file systems
+df -h
+
+# Format the EBS volume with ext4 file system
+sudo mkfs -t ext4 /dev/xvdf
+
+# Create a directory to mount the volume
+sudo mkdir /data
+
+# Mount the EBS volume
+sudo mount /dev/xvdf /data
+
+# Verify the mounted volume
+df -h
+
+# Display the UUID of the volume
+sudo blkid
+
+# Edit the fstab file to enable automatic mounting after reboot
+sudo nano /etc/fstab
+
+# Test the mounted volume
+echo "AWS EBS Storage Test" | sudo tee /data/test.txt
+
+# Verify the file
+cat /data/test.txt
+
+# Reboot the EC2 instance
+sudo reboot
