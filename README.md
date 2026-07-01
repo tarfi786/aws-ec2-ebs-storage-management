@@ -8,16 +8,21 @@ EBS volume creation, attachment, and management
 Linux disk formatting and mounting
 Persistent storage setup
 Snapshot-based backup and recovery
+
 ☁️ AWS Services Used
 Amazon EC2
 Amazon EBS
 Security Groups
 AWS Console
+
+
 🛠️ Tech Stack
 Linux (Ubuntu / Amazon Linux)
 Bash Shell
 SSH
 AWS CLI (basic)
+ 
+  
   Architecture
 User → EC2 Instance → EBS Volume → Mounted Storage (/data)
 ⚙️ Implementation Steps
@@ -43,13 +48,18 @@ sudo mount /dev/xvdf /data
 df -h
 10. Snapshot Backup
 Created EBS snapshot for data backup and recovery.
+ 
   Evidence
 EC2 instance running
 EBS volume attached
 Mounted filesystem output
 Snapshot created
+
+
 📈 Outcome
 Successfully implemented persistent storage on AWS using EC2 and EBS, along with Linux-based system administration and cloud storage management.
+
+
 👨‍💻 Author
 Tarfi Ansari
 Cloud & DevOps Enthusiast
